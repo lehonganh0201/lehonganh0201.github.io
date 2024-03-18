@@ -1,0 +1,62 @@
+[
+    {
+        "rank": 1,
+        "name": "Domeric",
+        "points": 123,
+        "team": "dcode"
+    },
+    {
+        "rank": 2,
+        "name": "Eleanor",
+        "points": 98,
+        "team": "alpha"
+    },
+    {
+        "rank": 3,
+        "name": "Gideon",
+        "points": 87,
+        "team": "bravo"
+    },
+    {
+        "rank": 4,
+        "name": "Luna",
+        "points": 76,
+        "team": "charlie"
+    },
+    {
+        "rank": 5,
+        "name": "Finn",
+        "points": 65,
+        "team": "delta"
+    },
+    {
+        "rank": 6,
+        "name": "Aria",
+        "points": 54,
+        "team": "echo"
+    },
+    {
+        "rank": 7,
+        "name": "Cassius",
+        "points": 43,
+        "team": "foxtrot"
+    },
+    {
+        "rank": 8,
+        "name": "Isolde",
+        "points": 32,
+        "team": "golf"
+    },
+    {
+        "rank": 9,
+        "name": "Oscar",
+        "points": 21,
+        "team": "hotel"
+    },
+    {
+        "rank": 10,
+        "name": "Penelope",
+        "points": 10,
+        "team": "india"
+    }
+]
