@@ -1,0 +1,17 @@
+ul{
+    list-style: none;
+    display: flex;
+    a{
+        color: #333;
+        padding: 4px 12px;
+        margin: 0 8px;
+        transition: all 0.2s linear;
+        font-size: 18px;
+
+        &:hover{
+            color: #7846db !important;
+            border-bottom: 2px dotted #7846db;
+        }
+    }
+}
+

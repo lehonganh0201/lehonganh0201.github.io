@@ -1,0 +1,35 @@
+.search{
+    padding: 20px;
+    margin-bottom: 20px;
+
+    h1{
+        margin: 0 0 30px;
+        color: #ff8c00;
+        text-align: center;
+    }
+
+    input{
+        padding: 12px;
+        font-size: 16px;
+        border: 2px solid cornflowerblue;
+        border-radius: 4px 0 0 4px;
+        outline: darkblue;
+        background-color: #fff;
+        width: 600px;
+    }
+
+    button{
+        @extend input;
+        width: auto;
+        border-radius: 0 4px 4px 0;
+        background-color: #6495ed;
+        color: #fff;
+        transition: all 0.4s linear;
+        cursor: pointer;
+
+        &:hover{
+            background-color: #000;
+            border: 2px solid #000;
+        }
+    }
+}
