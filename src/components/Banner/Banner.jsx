@@ -1,6 +1,6 @@
 import Left from './Left/Left';
 import Right from './Right/Right';
-import './Banner.css'
+import './Banner.scss'
 const Banner = () =>{
     return (
         <div className='banner'>

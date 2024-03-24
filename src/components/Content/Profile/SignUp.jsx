@@ -1,4 +1,4 @@
-import './Profile.css'
+import './Profile.scss'
 
 const SignUp = () =>{
     return (

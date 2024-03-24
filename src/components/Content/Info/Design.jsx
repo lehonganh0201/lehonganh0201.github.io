@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUsers } from "@fortawesome/free-solid-svg-icons";
-import './style.css'
+import './style.scss'
 const Design = () =>{
     return (
         <div>
