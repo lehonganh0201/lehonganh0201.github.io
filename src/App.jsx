@@ -1,16 +1,34 @@
-import Header from './components/Header/Header';
-import Banner from './components/Banner/Banner';
-import Content from './components/Content/Content';
-import Footer from './components/Footer/Footer';
+import { useEffect, useState } from "react";
+import axios from "axios";
+import Item from "./components/Item";
+
 function App() {
+  // const [products, setProducts] = useState([]);
+  // useEffect(() => {
+  //   const apiUrl = "https://dummyjson.com/products";
+  //   const fetchData = async () => {
+  //     const data = await axios.get(apiUrl);
+  //     setProducts(data.data.products)
+  //   };
+  //   fetchData();
+  // }, []);
+
   return (
     <>
-      <Header/>
-      <Banner/>
-      <Content/>
-      <Footer/>
+      {/* <div>
+        {products.map((product) => (
+          <div key={product.id}>
+            <div>{product.id}</div>
+            <div>{product.title}</div>
+            <div>{product.description}</div>
+            <div>{product.discountPercentage}</div>
+          </div>
+        ))}
+      </div> */}
+
+      <Item/>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
