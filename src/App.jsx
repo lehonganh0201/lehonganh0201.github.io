@@ -1,32 +1,26 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import Item from "./components/Item";
-
+import UseRef from "./components/UseRef/UseRef";
+import UseMemo from "./components/UseMemo/UseMeMo";
+import Memo from "./components/Memo/Memp";
+import TodoList from "./components/Todo/TodoList";
 function App() {
-  // const [products, setProducts] = useState([]);
-  // useEffect(() => {
-  //   const apiUrl = "https://dummyjson.com/products";
-  //   const fetchData = async () => {
-  //     const data = await axios.get(apiUrl);
-  //     setProducts(data.data.products)
-  //   };
-  //   fetchData();
-  // }, []);
+  // const [count, setCount] = useState(0);
+  
+  // const increment = () => {
+  //     setCount(pre => pre + 1)
+
+  // };
 
   return (
     <>
-      {/* <div>
-        {products.map((product) => (
-          <div key={product.id}>
-            <div>{product.id}</div>
-            <div>{product.title}</div>
-            <div>{product.description}</div>
-            <div>{product.discountPercentage}</div>
-          </div>
-        ))}
-      </div> */}
+      {/* <UseRef />
+      <UseMemo />
+    
+      <Memo onIncrementT={increment}/>
+      <b>{count}</b><br/> */}
 
-      <Item/>
+      <TodoList/>
     </>
   );
 }
