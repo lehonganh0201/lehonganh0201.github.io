@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import "./Login.scss";
 import * as Yup from "yup";
+import axios from 'axios';
 import { useFormik, Formik, Field, Form } from "formik";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
@@ -11,21 +13,14 @@ const Login = () => {
           username: "",
           password: "",
         }}
-        validationSchema={Yup.object({
-          username: Yup.string()
-            .required("Username cannot blank")
-            .min(5, "Username must be 5 character")
-            .matches(/^[A-Z][a-z]*(\s[A-Z][a-z]*)+$/, "Username must maches"),
-          password: Yup.string()
-            .required("Password cannot blank")
-            .min(8, "Password must be 8 character")
-            .matches(
-              /^(?=.*[A-Z])(?=.*[a-z].*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]/,
-              "Password sai định dạng"
-            ),
-        })}
-        onSubmit={(data) => {
-          console.log(data);
+        onSubmit={async(data) => {
+          try{
+            const result = await axios.post("https://reqres.in/api/login", data);
+            console.log(result.data);
+            localStorage.setItem("login", result.data.token);
+          }catch(error){
+            console.log(error);
+          }
         }}
       >
         {({ errors, touched }) => (
@@ -53,7 +48,7 @@ const Login = () => {
               </div>
               <button type="submit">Login</button>
               <p className="create-account">
-                Not Registered? <a href="#">Create An Account</a>
+                Not Registered? <Link to={"/sign-up"}>Create An Account</Link>
               </p>
             </div>
           </Form>

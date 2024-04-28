@@ -1,0 +1,28 @@
+.auth{
+    height: 100vh;
+    text-align: center;
+}
+
+.auth-form{
+    width: 28%;
+    padding: 2rem 3rem;
+    background-color: #fff;
+    box-shadow: 0 0 12px #0000001a;
+    border-radius: .2rem;
+    position: relative;
+
+    .auth-inp{
+        width: 100%;
+        padding: 1rem;
+        border: none;
+        outline: none;
+        background-color: #f2f2f2;
+        margin: 1rem 0;
+    }
+
+    .btn{
+        margin: 1rem auto;
+        width: 100%;
+        font-size: 1.5rem;
+    }
+}

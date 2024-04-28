@@ -1,40 +1,34 @@
 import { useCallback, useEffect, useState } from "react";
 import axios from "axios";
-import UseRef from "./components/UseRef/UseRef";
-import UseMemo from "./components/UseMemo/UseMeMo";
-import Memo from "./components/Memo/Memp";
-import TodoList from "./components/Todo/TodoList";
-import Counter from "./components/Counter/Counter";
-import Memp from "./components/Memo/Memp";
 import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
-import UserProfileForm from "./components/UserProfileForm/UserProfileForm";
+import Contact from './pages/Contact/Contact'
+import Home from "./pages/Home/Home";
+import AboutUs from './pages/AboutUs/AboutUs'
+import { Route, Routes, Link, NavLink } from "react-router-dom";
+import './App.scss'
+import 'bootstrap/dist/css/bootstrap.css';
 function App() {
 
-  // const [count, setCount] = useState(0);
-  // const increment = useCallback(() => setCount(pre => pre + 1),[]);
+
   return (
     <>
-      {/* <UseRef />
-      <UseMemo />
-    
-      <Memo onIncrementT={increment}/>
-      <b>{count}</b><br/> */}
+      {/* <nav>
+        <ul>
+          <li><NavLink to="/" className={activeNav}>Home</NavLink></li>
+          <li><NavLink to="/contact" className={activeNav}>Contact</NavLink></li>
+          <li><NavLink to="/about-us" className={activeNav}>AboutUs</NavLink></li>
+        </ul> */}
 
-      {/* <TodoList/> */}
-
-      {/* <Counter/> */}
-
-
-      {/* <Register/> */}
-      <Login/>
-
-
-      {/* <p>{count}</p>
-
-      <Memp onIncrement={increment}/> */}
-
-      {/* <UserProfileForm/> */}
+        {/* <br/> <br/> */}
+        <Routes>
+          <Route path="/" element={<Home/>} />
+          <Route path="/about-us" element={<AboutUs/>}/>
+          <Route path="/contact" element={<Contact/>} />
+          <Route path="/login" element={<Login/>} />
+          <Route path="/sign-up" element={<Register/>}/>
+        </Routes>
+      {/* </nav> */}
     </>
   );
 }
