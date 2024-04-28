@@ -16,7 +16,6 @@ const Login = () => {
         onSubmit={async(data) => {
           try{
             const result = await axios.post("https://reqres.in/api/login", data);
-            console.log(result.data);
             localStorage.setItem("login", result.data.token);
           }catch(error){
             console.log(error);

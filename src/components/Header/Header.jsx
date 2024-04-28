@@ -10,7 +10,7 @@ const Header = () => {
                         <h1>Start Bootstrap</h1>
                     </Link>
                     <Link to={"/login"}>
-                        <button className="btn btn-primary">Login</button>
+                        {localStorage.getItem("login") !== null ? <button className="btn btn-primary">Login</button> : <p>Hi, I'm Hồng Anh</p>}
                     </Link>
                 </div>
         </header>
