@@ -28,7 +28,7 @@ const Calculator = () => {
     dispatch({ type: UP_COUNT });
   };
 
-  const handleDivideConfirm = (e) => {
+  const handleDivideConfirm = () => {
     const divisor = parseInt(prompt("Enter divisor:"));
     if (!isNaN(divisor) && divisor !== 0) {
       dispatch({ type: DIVIDE, divisor: divisor });

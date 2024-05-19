@@ -1,0 +1,36 @@
+.testimonials{
+    background-color: #f8f9fa;
+    padding: 7rem 0;
+
+    .h1-title{
+        text-align: center;
+        margin: 0 0 3rem;
+    }
+
+    .testimonials-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .testimonial-item {
+            width: 33%;
+            padding: 0 4rem;
+        }
+
+        .avatar{
+            width: 12rem;
+            height: 12rem;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 1px 1px 5px #adb5bd;
+            margin: 0 auto;
+
+            img{
+                width: 100%;
+                object-position: center;
+            }
+        }
+    }
+
+    
+}

@@ -1,0 +1,32 @@
+.card-container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  
+    .card-img-top {
+      width: 100%;
+      height: auto;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  
+    .card-body {
+      text-align: center;
+  
+      .card-title {
+        margin: 10px 0;
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+  
+      .card-text {
+        margin: 5px 0;
+        color: #555;
+      }
+    }
+  }
+  
