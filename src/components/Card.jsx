@@ -1,6 +1,5 @@
-import React from 'react';
-import './Card.scss';
-
+import React from 'react'
+import './Card.scss'
 const Card = () => {
   return (
     <div className="card-container">
@@ -16,7 +15,7 @@ const Card = () => {
         <p className="card-text">Điện thoại: 0123-456-789</p>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Card;
+export default Card
